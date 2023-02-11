@@ -10,13 +10,22 @@
   </head>
   <body>
     <form class="search-form" id="search-form">
-      <input
-        type="text"
-        name="searchQuery"
-        autocomplete="off"
-        placeholder="Search images..."
+      <input class="search-form__input"
+      type="text"
+      name="searchQuery"
+      autocomplete="off"
+      placeholder="Search images..."
       />
-      <button type="submit">Search</button>
+      <button class="search-form__button" type="submit">Search</button>
     </form>
+    
+    <div class="gallery">
+    </div>
+
+    <button type="button" class="load-more is-hidden">Load more</button>
+    <p class="text-Collections is-hidden">
+      We're sorry, but you've reached the end of search results.
+    </p>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
